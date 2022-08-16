@@ -1,0 +1,163 @@
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  color: #7d7987;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  border: 1px solid red;
+}
+
+/* 
+    ||
+    ||
+    ||  
+    \/
+*/
+
+.header {
+  justify-content: space-between;
+}
+
+.header .header-logo {
+  margin: 56px 0 0 123.07px;
+}
+
+.header .header-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 585.64px;
+  margin: 70px 169.16px 0 0;
+}
+
+.header .header-menu a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1f1534;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header .header-menu a:first-child {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.section-consult .consult {
+  margin: 106px 136.47px 0 122px;
+  flex: 0 0 458px;
+}
+
+.section-consult .consult h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.section-consult .consult p {
+  font-size: 21px;
+  line-height: 32px;
+  margin: 25px 0 45px;
+}
+
+.section-consult .consult button {
+  background: #458ff6;
+  padding: 5px 43px;
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  color: #ffffff;
+  border: none;
+}
+
+.section-consult .illustration {
+  flex: 0 0 744.68px;
+}
+
+.section-services {
+  flex-direction: column;
+}
+
+.section-services .services {
+  text-align: center;
+  flex: 0 0 952px;
+  margin: 0 auto 80px;
+}
+
+.section-services .services h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.section-services .services .line {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 26px auto 33px;
+}
+
+.section-services .services p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.section-services .services-cards {
+  position: relative;
+  flex-wrap: wrap;
+  gap: 31px;
+  padding: 0 240px;
+  border: 1px solid green;
+}
+
+.section-services .services-cards .card {
+  flex: 0 0 350px;
+  padding: 54px 45px 56.59px 37px;
+  background: #ffffff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.section-services .services-cards .grid {
+  position: absolute;
+  right: 190px;
+  top: calc(50% - 57.5px);
+  z-index: -1;
+}
+
+.section-services .services-cards h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.section-services .services-cards p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.section-services .learn-more button {
+  border: 1.4px solid #458ff6;
+  border-radius: 55px;
+  padding: 5px 51px;
+  margin: 69px auto 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  color: #458ff6;
+}
