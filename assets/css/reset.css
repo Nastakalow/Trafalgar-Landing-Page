@@ -127,8 +127,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+.container,
+.row,
 .section-services .services-cards .card,
-.section-services .services-cards {
+.section-services .services-cards,
+.section-customer .customer,
+.section-customer .customer .customer-header,
+.section-customer .customer .customer-info,
+.section-customer .customer .customer-says {
   box-sizing: border-box;
 }

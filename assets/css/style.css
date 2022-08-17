@@ -1,13 +1,12 @@
 body {
   font-family: "Mulish", sans-serif;
-  font-weight: 300;
-  color: #7d7987;
 }
 
 .container {
   width: 1600px;
   margin: 0 auto;
   border: 1px solid black;
+  overflow: hidden;
 }
 
 .row {
@@ -70,13 +69,8 @@ body {
 }
 
 .section-consult .consult button {
-  background: #458ff6;
-  padding: 5px 43px;
-  border-radius: 55px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 60px;
-  color: #ffffff;
+  background: #458ff6 !important;
+  color: #ffffff !important;
   border: none;
 }
 
@@ -95,24 +89,18 @@ body {
 }
 
 .section-services .services h2 {
-  font-weight: 700;
-  font-size: 36px;
   line-height: 56px;
-  color: #000000;
 }
 
-.section-services .services .line {
+.section-services .services .line,
+.section-providers .providers .line,
+.section-download .download .line,
+.section-customer .customer .header .line {
   width: 56px;
   height: 2px;
   background-color: #000;
   border-radius: 5px;
   margin: 26px auto 33px;
-}
-
-.section-services .services p {
-  font-size: 18px;
-  line-height: 30px;
-  color: #7d7987;
 }
 
 .section-services .services-cards {
@@ -151,7 +139,10 @@ body {
   line-height: 28px;
 }
 
-.section-services .learn-more button {
+.section-services .learn-more button,
+.section-consult .consult button,
+.section-providers .providers button,
+.section-download .download button {
   border: 1.4px solid #458ff6;
   border-radius: 55px;
   padding: 5px 51px;
@@ -160,4 +151,113 @@ body {
   font-size: 18px;
   line-height: 60px;
   color: #458ff6;
+  background: transparent;
+}
+
+.section-providers .illustration {
+  margin: 0 142px 0 135px;
+  flex: 0 0 650px;
+}
+
+.section-providers .providers {
+  position: relative;
+  flex: 0 0 481px;
+  margin-top: 57px;
+}
+
+.section-providers .providers h2 {
+  line-height: 56px;
+}
+
+.section-providers .providers .line,
+.section-download .download .line {
+  margin-left: 0;
+}
+
+.section-providers .providers button,
+.section-download .download button {
+  margin-top: 40px;
+}
+
+.section-providers .providers .grid {
+  position: absolute;
+  right: -240px;
+  bottom: -100px;
+}
+
+.section-download .download {
+  flex: 0 0 420px;
+  margin: 36px 71px 0 280px;
+}
+
+.section-download .download button img {
+  margin-left: 14.79px;
+}
+
+.section-download .illustration {
+  flex: 0 0 165px;
+}
+
+.section-customer .customer {
+  position: relative;
+  width: 1120px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+}
+
+.section-customer .customer .grid{
+  position: absolute;
+  top: -15px;
+  right: -50px;
+}
+
+.section-customer .customer .customer-header {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.section-customer .customer .customer-header h2 {
+  color: #fff;
+}
+
+.section-customer .customer .customer-header .line {
+  margin: 25px auto 0;
+  background-color: #fff;
+}
+
+.section-customer .customer .customer-info {
+  flex: 0 0 354px;
+  margin: 66px 110px 83px 118px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-customer .customer .customer-info .customer-content-info h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.section-customer .customer .customer-info .customer-content-info small {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.section-customer .customer .customer-says {
+  flex: 0 0 420px;
+  margin: 77px 115px 89px 0;
+}
+
+.section-customer .customer .customer-says p {
+  font-weight: 400;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.9);
 }
