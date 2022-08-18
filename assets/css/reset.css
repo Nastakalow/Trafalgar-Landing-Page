@@ -127,6 +127,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
 .container,
 .row,
 .section-services .services-cards .card,
@@ -134,6 +143,7 @@ table {
 .section-customer .customer,
 .section-customer .customer .customer-header,
 .section-customer .customer .customer-info,
-.section-customer .customer .customer-says {
+.section-customer .customer .customer-says,
+.footer {
   box-sizing: border-box;
 }

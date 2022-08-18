@@ -5,13 +5,11 @@ body {
 .container {
   width: 1600px;
   margin: 0 auto;
-  border: 1px solid black;
   overflow: hidden;
 }
 
 .row {
   display: flex;
-  border: 1px solid red;
 }
 
 /* 
@@ -42,7 +40,6 @@ body {
   line-height: 23px;
   color: #1f1534;
   opacity: 0.5;
-  text-decoration: none;
 }
 
 .header .header-menu a:first-child {
@@ -78,14 +75,16 @@ body {
   flex: 0 0 744.68px;
 }
 
-.section-services {
+.section-services,
+.section-articles {
   flex-direction: column;
 }
 
 .section-services .services {
+  flex-direction: column;
   text-align: center;
-  flex: 0 0 952px;
-  margin: 0 auto 80px;
+  margin-bottom: 80px;
+  padding: 0 325px;
 }
 
 .section-services .services h2 {
@@ -95,7 +94,8 @@ body {
 .section-services .services .line,
 .section-providers .providers .line,
 .section-download .download .line,
-.section-customer .customer .header .line {
+.section-customer .customer .header .line,
+.section-articles .title .line {
   width: 56px;
   height: 2px;
   background-color: #000;
@@ -108,7 +108,6 @@ body {
   flex-wrap: wrap;
   gap: 31px;
   padding: 0 240px;
-  border: 1px solid green;
 }
 
 .section-services .services-cards .card {
@@ -142,7 +141,8 @@ body {
 .section-services .learn-more button,
 .section-consult .consult button,
 .section-providers .providers button,
-.section-download .download button {
+.section-download .download button,
+.section-articles .learn-more button {
   border: 1.4px solid #458ff6;
   border-radius: 55px;
   padding: 5px 51px;
@@ -190,8 +190,15 @@ body {
   margin: 36px 71px 0 280px;
 }
 
+.section-download .download button{
+  position: relative;
+  padding-right: 60px;
+}
+
 .section-download .download button img {
-  margin-left: 14.79px;
+  position: absolute;
+  top: 28px ;
+  right: 35px;
 }
 
 .section-download .illustration {
@@ -209,7 +216,7 @@ body {
   border-radius: 24px;
 }
 
-.section-customer .customer .grid{
+.section-customer .customer .grid {
   position: absolute;
   top: -15px;
   right: -50px;
@@ -260,4 +267,136 @@ body {
   font-weight: 400;
   font-size: 19px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.section-articles .title {
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-articles .article-cards {
+  padding: 0 240px;
+  gap: 34px;
+}
+
+.section-articles .article-cards .card {
+  flex: 0 0 350px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section-articles .article-cards .card .card-content {
+  margin: 21px 51px 35px 33px;
+}
+
+.section-articles .article-cards .card .card-content h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.section-articles .article-cards .card .card-content p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 12px 0 25px;
+}
+
+.section-articles .article-cards .card .card-content a {
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ed;
+}
+
+.section-articles .article-cards .card .card-content a img{
+  position: absolute;
+  top: 5px ;
+  right: -30px;
+  transform: rotate(270deg);
+}
+
+.section-articles .learn-more button {
+  margin-top: 72px;
+}
+
+.footer{
+  position: relative;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.footer .footer-container{
+  flex: 0 0 1,196px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 133.17px auto 127.98px;
+}
+
+.footer .footer-container .grid {
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+}
+
+.footer .footer-container .trafalgar {
+  flex: 0 0 391px;
+}
+
+.footer .footer-container .trafalgar .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .footer-container .trafalgar .footer-logo .bg-logo {
+  display: inline;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+
+.footer .footer-container .trafalgar .footer-logo .bg-logo h2 {
+  font-size: 26px;
+  line-height: 33px;
+  color: #5b9bf3;
+}
+
+.footer .footer-container .trafalgar .footer-logo h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer .footer-container .trafalgar > p {
+  line-height: 28px;
+  color: #ffffff;
+  margin: 19.19px 0 24.99px;
+}
+
+.footer .footer-container .trafalgar p:last-child {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer .footer-container h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.footer .footer-container .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-container .links a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #ececec;
 }
